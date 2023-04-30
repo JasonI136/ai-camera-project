@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Tracking</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Landing Page</a>
+        <a href="/body-detection">Body Tracking</a>
+        <a href="/object-detection">Object Detection</a>
+        <a href="/text-detection">Text Detection</a>
+    </nav>
+    <div class="container">
+        <h1>Real-time Body Tracking</h1>
+        <p class="description">This application uses TensorFlow.js and the PoseNet model to track human body movements in real-time.</p>
+        <div class="video-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <ul>
+                <li>Make sure your camera is turned on and pointing at a human subject.</li>
+                <li>The app will track the movements of the subject and display them on the canvas.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
+    <script src="models/app.js"></script>
+</body>
+
+</html>

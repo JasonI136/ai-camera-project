@@ -4,23 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Body Tracking App</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Camera Test App with TensorFlow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camera Test App with TensorFlow</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
   <nav>
-    <a href="/">Body Tracking</a>
+    <a href="/">Landing Page</a>
+    <a href="/body-detection">Body Tracking</a>
     <a href="/object-detection">Object Detection</a>
     <a href="/text-detection">Text Detection</a>
   </nav>
-  <div class="container">
-    <canvas id="canvas"></canvas>
+  <div class="hero">
+    <h1 class="title">Camera Test App with TensorFlow</h1>
+    <p>Test your camera and learn about machine learning with TensorFlow</p>
   </div>
-
+  <div class="container">
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-camera"></i>
+        <h2>Camera Test</h2>
+        <p>Use your device's camera to test if it's working properly.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-brain"></i>
+        <h2>Machine Learning</h2>
+        <p>Learn about machine learning and how it's used in computer vision.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-desktop"></i>
+        <h2>TensorFlow</h2>
+        <p>Discover TensorFlow, an open-source software library for machine learning.</p>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/posenet"></script>
-  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="models/object_detection.js"></script>
 </body>
+
+</html>
+
 
 </html>

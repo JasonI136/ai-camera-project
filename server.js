@@ -13,6 +13,10 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
+app.get('/body-detection', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/body_detection.html'));
+});
+
 app.get('/object-detection', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/object_detection.html'));
 });
