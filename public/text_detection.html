@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Detection</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Body Tracking</a>
+    <a href="/object-detection">Object Detection</a>
+    <a href="/text-detection">Text Detection</a>
+  </nav>
+  <div class="container">
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="capture">Capture Text</button>
+    <p id="text-result">Detected Text: </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js"></script>
+  <script src="text_detection.js"></script>
+</body>
+</html>
