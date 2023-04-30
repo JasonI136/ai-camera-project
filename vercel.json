@@ -4,12 +4,6 @@
     "builds": [
       { "src": "public/**", "use": "@vercel/static" }
     ],
-    "rewrites": [
-      { "source": "/body-detection", "destination": "/public/body-detection/index.html" },
-      { "source": "/object-detection", "destination": "/public/object-detection/index.html" },
-      { "source": "/text-detection", "destination": "/public/text-detection/index.html" },
-      { "source": "/:path*", "destination": "/public/:path*" }
-    ],
     "routes": [
       { "src": "/(.*)", "dest": "/public/$1" },
       { "handle": "filesystem" }
