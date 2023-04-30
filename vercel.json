@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "body-tracking-app",
+    "builds": [
+      { "src": "public/**", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/public/$1" },
+      { "handle": "filesystem" }
+    ]
+  }
+  
